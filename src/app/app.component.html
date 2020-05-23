@@ -1,0 +1,4 @@
+<app-digimon-header [digimons]="digimons" (searchChange)="newDigimonSearch($event)" (levelSelected)="newLevelSelected($event)"></app-digimon-header>
+<app-digimon-body (exportDigimons)="exportDigimons($event)" [search]="search" [levelFilter]="levelFilter"></app-digimon-body>
+
+<router-outlet></router-outlet>
